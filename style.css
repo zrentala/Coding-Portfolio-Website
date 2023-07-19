@@ -49,13 +49,49 @@
 }
 
 .nav-link {
-    color:antiquewhite;
+    color:antiquewhite !important;
 }
 
-.nnav-link:hover {
-    color:rgb(189, 137, 73);
+.nav-link:hover {
+    color:rgb(189, 137, 73) !important;
 }
 
 .active {
-    color: rgb(225, 167, 91);
+    color: rgb(225, 167, 91) !important;
+}
+
+.icon {
+    color: antiquewhite !important;
+    font-size: 25px;
+}
+
+.icon:hover {
+    transition: 0.2s !important;
+    color:rgb(189, 137, 73) !important;
+}
+
+.email {
+    color:antiquewhite !important;
+}
+
+.email:hover {
+    transition: 0.2s !important;
+    color:rgb(189, 137, 73) !important;
+}
+
+.btn {
+    background-color:rgb(189, 137, 73) !important;
+    border-color:rgb(189, 137, 73) !important;
+}
+
+.btn:hover {
+    transition: 0.2s !important;
+    background-color:rgb(214, 106, 28) !important;
+    border-color:rgb(214, 106, 28) !important;
+}
+
+strong {
+    display: inline !important;
+    font-weight: 500 !important;
+
 }
