@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Images",
+			"path": "../../website/Images"
+		},
+		{
+			"name": "Coding Portfolio Website",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Coding Portfolio Website"
+	}
+}
