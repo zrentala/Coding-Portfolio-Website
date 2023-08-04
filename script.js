@@ -37,3 +37,34 @@
 //     } 
 //   });
 // });
+
+const observerL = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showL');
+        } 
+    });
+});
+
+const observerR = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showR');
+        } 
+    });
+});
+
+const observerB = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showB');
+        } 
+    });
+});
+
+const hiddenElementsL = document.querySelectorAll('.hiddenL');
+const hiddenElementsR = document.querySelectorAll('.hiddenR');
+const hiddenElementsB = document.querySelectorAll('.hiddenB');
+hiddenElementsL.forEach((el) => observerL.observe(el));
+hiddenElementsR.forEach((el) => observerR.observe(el));
+hiddenElementsB.forEach((el) => observerB.observe(el));
